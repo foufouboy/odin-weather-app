@@ -1,0 +1,44 @@
+assets by status 0 bytes [cached] 1 asset
+
+WARNING in configuration
+The 'mode' option has not been set, webpack will fallback to 'production' for this value.
+Set 'mode' option to 'development' or 'production' to enable defaults for each environment.
+You can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/configuration/mode/
+
+ERROR in main
+Module not found: Error: Can't resolve './src' in '/home/issa/Téléchargements/TOP/repos/odin-weather-app'
+resolve './src' in '/home/issa/Téléchargements/TOP/repos/odin-weather-app'
+  using description file: /home/issa/Téléchargements/TOP/repos/odin-weather-app/package.json (relative path: .)
+    Field 'browser' doesn't contain a valid alias configuration
+    using description file: /home/issa/Téléchargements/TOP/repos/odin-weather-app/package.json (relative path: ./src)
+      no extension
+        Field 'browser' doesn't contain a valid alias configuration
+        /home/issa/Téléchargements/TOP/repos/odin-weather-app/src is not a file
+      .js
+        Field 'browser' doesn't contain a valid alias configuration
+        /home/issa/Téléchargements/TOP/repos/odin-weather-app/src.js doesn't exist
+      .json
+        Field 'browser' doesn't contain a valid alias configuration
+        /home/issa/Téléchargements/TOP/repos/odin-weather-app/src.json doesn't exist
+      .wasm
+        Field 'browser' doesn't contain a valid alias configuration
+        /home/issa/Téléchargements/TOP/repos/odin-weather-app/src.wasm doesn't exist
+      as directory
+        existing directory /home/issa/Téléchargements/TOP/repos/odin-weather-app/src
+          using description file: /home/issa/Téléchargements/TOP/repos/odin-weather-app/package.json (relative path: ./src)
+            using path: /home/issa/Téléchargements/TOP/repos/odin-weather-app/src/index
+              using description file: /home/issa/Téléchargements/TOP/repos/odin-weather-app/package.json (relative path: ./src/index)
+                no extension
+                  Field 'browser' doesn't contain a valid alias configuration
+                  /home/issa/Téléchargements/TOP/repos/odin-weather-app/src/index doesn't exist
+                .js
+                  Field 'browser' doesn't contain a valid alias configuration
+                  /home/issa/Téléchargements/TOP/repos/odin-weather-app/src/index.js doesn't exist
+                .json
+                  Field 'browser' doesn't contain a valid alias configuration
+                  /home/issa/Téléchargements/TOP/repos/odin-weather-app/src/index.json doesn't exist
+                .wasm
+                  Field 'browser' doesn't contain a valid alias configuration
+                  /home/issa/Téléchargements/TOP/repos/odin-weather-app/src/index.wasm doesn't exist
+
+webpack 5.75.0 compiled with 1 error and 1 warning in 128 ms

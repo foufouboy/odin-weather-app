@@ -1,0 +1,33 @@
+{
+  "name": "odin-weather-app",
+  "version": "1.0.0",
+  "description": "TOP Weather App",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack serve --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foufouboy/odin-weather-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/foufouboy/odin-weather-app/issues"
+  },
+  "homepage": "https://github.com/foufouboy/odin-weather-app#readme",
+  "devDependencies": {
+    "chart.js": "^4.2.1",
+    "css-loader": "^6.7.3",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "chartjs-plugin-datalabels": "^2.2.0"
+  }
+}
