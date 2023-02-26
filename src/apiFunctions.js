@@ -9,7 +9,7 @@ export {
 
 const apiKey = "f2bc89ce91054760857142356232302";
 const baseUrl = 
-    `https://cors-anywhere.herokuapp.com/http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=`;
+    `/https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=`;
 
 
 
