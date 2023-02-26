@@ -95,7 +95,7 @@ h1, h2, h3 {
     cursor: pointer;
 }
 
-.weather-degrees .unit .fahreneit {
+.weather-degrees .unit .active {
     color: var(--important-color);
 }
 
@@ -120,9 +120,10 @@ h1, h2, h3 {
     display: flex;
     align-items: start;
     font-size: 14px;
+    cursor: pointer;
 }
 
-.weather-graph-options .option:nth-child(1) {
+.active-graph {
    border-bottom: 3px solid #fdd663;
    cursor: pointer;
    padding-bottom: 6px;
@@ -134,16 +135,17 @@ h1, h2, h3 {
     height: var(--neutral-size);
 }
 
-.weather-graph {
-    cursor: pointer;
-}
-
 .weather-days {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 4px;
     cursor: pointer;
+}
+
+.weather-days .active-card {
+    background: rgb(255, 255, 255, .1);
+    border-radius: 10px;
 }
 
 .weather-card {
@@ -154,11 +156,6 @@ h1, h2, h3 {
     gap: 3px;
     flex: 1;
     padding: 7px 0;
-}
-
-.weather-card:hover {
-    background: rgb(255, 255, 255, .1);
-    border-radius: 10px;
 }
 
 .weather-card .icon img {
@@ -198,16 +195,23 @@ h1, h2, h3 {
     color: var(--important-color);
 }
 
-.search-container::after {
-    content: "";
+.search-button {
     position: absolute;
     display: inline-block;
     width: 30px;
     height: 30px;
-    background: url("../dist/assets/search.svg");
-    background-size: cover;
     top: 5px;
     right: 18px;
     z-index: 2;
     cursor: pointer;
+}
+
+.error-text {
+    color: crimson;
+    font-size: 12px;
+    position: absolute;
+    padding-top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: underline;
 }
