@@ -8,7 +8,7 @@
 <body> 
     <main class="weather-hero">
         <div class="location-name">
-            <p>Résultats pour <span class="location">Brech</span></p>
+            <p>Results for <span class="location"></span></p>
         </div>
         <div class="weather-resume">
             <div class="data">
@@ -16,44 +16,46 @@
                     <img src="./assets/cloudy.png" alt="cloudy">
                 </div>
                 <div class="weather-degrees">
-                    <p class="degrees">8</p>
+                    <p class="degrees temp">8</p>
                     <p class="unit">
-                        <span class="celsius">°C</span>
+                        <span class="celsius active">°C</span>
                         <span class="separator"></span>
                         <span class="fahreneit">°F</span>
                     </p>
                 </div>
                 <div class="weather-data">
-                    <p>Précipitations : <span>61%</span></p>
-                    <p>Humidité : <span>96%</span></p>
-                    <p>Vent : <span>6km/h</span></p>
+                    <p>Precipitations : <span>61%</span></p>
+                    <p>Humidity : <span>96%</span></p>
+                    <p>Max wind : <span>6km/h</span></p>
                 </div>
             </div>
             <div class="text-resume">
-                <h1 class="title">Météo</h1>
-                <p class="weather-time-text">mercredi 8:00</p>
+                <h1 class="title">Weather Forecast</h1>
+                <p class="weather-time-day">mercredi</p>
                 <p class="weather-text-resume">Faible pluie</p>
             </div>
         </div>
         <div class="weather-graph-options">
-            <p class="option">Température</p>
+            <p class="option temp active-graph">Temperature</p>
             <span class="separator"></span>
-            <p class="option">Précipitations</p>
+            <p class="option prec">Precipitations</p>
             <span class="separator"></span>
-            <p class="option">Vent</p>
+            <p class="option wind">Wind</p>
         </div>
-        <div class="graph-container">
-            <canvas class="weather-graph" style="height: 120px; width: 620px;"></canvas>
+        <div class="graph-container" style="height: 120px;">
+            <canvas class="weather-graph temp" style="height: 120px; width: 620px; display: none;"></canvas>
+            <canvas class="weather-graph prec" style="height: 120px; width: 620px; display: none;"></canvas>
+            <canvas class="weather-graph wind" style="height: 120px; width: 620px; display: none;"></canvas>
         </div>
         <div class="weather-days">
-            <div class="weather-card">
+            <div class="weather-card first active-card">
                 <div class="day">mer.</div>
                 <div class="icon">
                     <img src="./assets/rainy.png" alt="rainy">
                 </div>
                 <div class="temps">
-                    <span class="highest">11°</span>
-                    <span class="lowest">1°</span>
+                    <span class="highest"><span class="temp">11</span>°</span></span>
+                    <span class="lowest"><span class="temp">1</span>°</span>
                 </div>
             </div>
             <div class="weather-card">
@@ -62,8 +64,8 @@
                     <img src="./assets/rainy.png" alt="rainy">
                 </div>
                 <div class="temps">
-                    <span class="highest">11°</span>
-                    <span class="lowest">1°</span>
+                    <span class="highest"><span class="temp">11</span>°</span></span>
+                    <span class="lowest"><span class="temp">1</span>°</span>
                 </div>
             </div>
             <div class="weather-card">
@@ -72,8 +74,8 @@
                     <img src="./assets/rainy.png" alt="rainy">
                 </div>
                 <div class="temps">
-                    <span class="highest">11°</span>
-                    <span class="lowest">1°</span>
+                    <span class="highest"><span class="temp">11</span>°</span></span>
+                    <span class="lowest"><span class="temp">1</span>°</span>
                 </div>
             </div>
             <div class="weather-card">
@@ -82,8 +84,8 @@
                     <img src="./assets/rainy.png" alt="rainy">
                 </div>
                 <div class="temps">
-                    <span class="highest">11°</span>
-                    <span class="lowest">1°</span>
+                    <span class="highest"><span class="temp">11</span>°</span></span>
+                    <span class="lowest"><span class="temp">1</span>°</span>
                 </div>
             </div>
             <div class="weather-card">
@@ -92,8 +94,8 @@
                     <img src="./assets/rainy.png" alt="rainy">
                 </div>
                 <div class="temps">
-                    <span class="highest">11°</span>
-                    <span class="lowest">1°</span>
+                    <span class="highest"><span class="temp">11</span>°</span></span>
+                    <span class="lowest"><span class="temp">1</span>°</span>
                 </div>
             </div>
             <div class="weather-card">
@@ -102,8 +104,8 @@
                     <img src="./assets/rainy.png" alt="rainy">
                 </div>
                 <div class="temps">
-                    <span class="highest">11°</span>
-                    <span class="lowest">1°</span>
+                    <span class="highest"><span class="temp">11</span>°</span></span>
+                    <span class="lowest"><span class="temp">1</span>°</span>
                 </div>
             </div>
             <div class="weather-card">
@@ -112,8 +114,8 @@
                     <img src="./assets/rainy.png" alt="rainy">
                 </div>
                 <div class="temps">
-                    <span class="highest">11°</span>
-                    <span class="lowest">1°</span>
+                    <span class="highest"><span class="temp">11</span>°</span></span>
+                    <span class="lowest"><span class="temp">1</span>°</span>
                 </div>
             </div>
             <div class="weather-card">
@@ -122,16 +124,17 @@
                     <img src="./assets/rainy.png" alt="rainy">
                 </div>
                 <div class="temps">
-                    <span class="highest">11°</span>
-                    <span class="lowest">1°</span>
+                    <span class="highest"><span class="temp">11</span>°</span></span>
+                    <span class="lowest"><span class="temp">1</span>°</span>
                 </div>
             </div>
         </div>
     </main>
         <div class="main-separator"></div>
     <div class="search-container">
+        <img class="search-button" src="./assets/search.svg" alt="search button">
         <input class="city-search" type="text">
+        <p class="error-text"></p>
     </div>
-    
 </body>
 </html>
