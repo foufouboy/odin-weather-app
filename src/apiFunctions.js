@@ -7,7 +7,9 @@ export {
     getIconFrom,
 };
 
-const apiKey = "f2bc89ce91054760857142356232302";
+// That is NOT goog practice, but I will leave it like this for now
+
+const apiKey = "f0a12d7e0fab4ba8a9294419252801";
 const baseUrl = 
     `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=`;
 
